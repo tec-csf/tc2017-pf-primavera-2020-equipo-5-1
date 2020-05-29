@@ -74,9 +74,10 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ### 3.1 Arquitectura de la solución
 
-*[Incluya aquí un diagrama donde se aprecie la arquitectura de la solución propuesta, así como la interacción entre los diferentes componentes de la misma.]*
 
-*[Incluya una explicación del flujo de la información entre los diferentes componentes.]*
+![Topologia](/images/DiagramaAlgoritmos.jpeg)
+
+Aquí se aprecia una opción simple y clara sobre todos los componentes de nuestra solución, las capas, las tecnologías y sobre todo el flujo continuo entre sus componentes. 
 
 ### 3.2 Descripción de los componentes
 
