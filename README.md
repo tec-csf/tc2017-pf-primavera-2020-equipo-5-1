@@ -6,7 +6,6 @@
 1. *Carla Pérez Gavilán Del Castillo* - *A01023033* - *CSF*
 2. *Rubén Hernández Rivas* - *A01024669* - *CSF*
 3. *Christian Alberto Dalma Schultz* - *A01423166* - *CSF*
-4. *[Poner aquí Nombre y Apellidos del integrante 4]* - *[Poner aquí su Matrícula]* - *[Poner aquí su campus]*
 
 ---
 ## 1. Aspectos generales
@@ -51,7 +50,17 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 
 ## 2. Descripción del proyecto
 
-*[Incluya aquí la descripción del proyecto.]*
+** PROBLEMA 5: Topología Estrella **
+
+El problema consiste en una computadora central que asigna trabajos de forma aleatoria a las computadoras perifericas siguiendo la siguiente estructura: 
+
+
+El usuario debe poder insertar las siguientes variables para correr la simulación: 
+* n --> cantidad de computadoras perifericas que se encuentran en la topología
+* _&alpha; --> media por hora con distribución Poisson para distribución de trabajos en orden secuencial
+* _&beta; --> 1/_&beta; será el tiempo promedio de falla de computadoras periféricas con distribución exponencial
+* _&gamma; --> 1/_&gamma; indica el tiempo de falla de la computadora central con distribución exponencial. 
+* _&delta; --> determina el tiempo de distriución de los trabajos 
 
 ## 3. Solución
 
@@ -72,16 +81,23 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 *[Incluya aquí una explicación de la solución utilizada para el frontend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
 
 #### 3.3.1 Lenguaje de programación
+
 #### 3.3.2 Framework
 #### 3.3.3 Librerías de funciones o dependencias
+
+
+
 
 ### 3.4 Backend
 
 *[Incluya aquí una explicación de la solución utilizada para el backend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
 
 #### 3.4.1 Lenguaje de programación
+
 #### 3.4.2 Framework
 #### 3.4.3 Librerías de funciones o dependencias
+Para el uso de procesos en paralelo 
+ - https://martin-thoma.com/part-iii-matrix-multiplication-on-multiple-cores-in-python-java-and-c/
 
 ### 3.5 API
 
