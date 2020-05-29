@@ -46,6 +46,25 @@
 *::after {
   box-sizing: border-box;
 }
+.leftside, .rightside{
+  height: 100vh;
+  width: 100%;
+}
+.leftside{
+  background:rgb(194, 243, 250);
+}
+.rightside{
+  background:rgb(146, 255, 164);
+}
+.half {
+  width:50%;
+  display: table-cell;
+}
+@media screen and (min-width: 768px){
+  .leftside, .rightside{
+    height: 100vh;
+  }
+}
 
 html {
   font-family: sans-serif;
