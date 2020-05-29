@@ -139,7 +139,18 @@ if __name__ == '__main__':
 ```
 
 #### 3.4.3 Librerías de funciones o dependencias
-Para la multiplicación de matrices: 
+
+Se utilizaron dos librerías principales para el uso de paralelismo: 
+- **concurrent.futures** : se utilizó el ThreadPoolExecutor para manejar una cantidad límitada de hilos que ejecuten una misma función de forma asíncrona. 
+    - se utilizó en la función de multiplicación de matrices, suma de vectores y producto punto de dos vectores. 
+    - _FUENTE_: https://docs.python.org/3/library/concurrent.futures.html
+-**threading** : se utilizó este modulo para manejar de manera manual las funciones concurrentes de la generación de trabajos, distribución de trabajos y manejo de fallas. 
+    - _FUENTE_: https://docs.python.org/3/library/threading.html
+-**time**: se utliza el método de sleep() para la espera de un proceso o entre fallas. 
+    -_FUENTE_ :https://docs.python.org/3/library/time.html
+ -**numpy**: se utiliza para generar números aleatorios con una distribución exponencial o poisson de acuerdo a los requerimientos del proyectos. 
+    -_FUENTE_: https://docs.scipy.org/doc/numpy-1.15.0/reference/routines.random.html
+_FUENTE ÚTIL PARA MULTIPLICACIÓN DE MATRICES_: 
  - https://martin-thoma.com/part-iii-matrix-multiplication-on-multiple-cores-in-python-java-and-c/
 
 ### 3.5 API
