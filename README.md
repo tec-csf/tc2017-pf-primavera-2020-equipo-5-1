@@ -98,8 +98,14 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 Existen dos clases principales las computadoras periféricas y la computadora central, cada una con su respectiva clase y constructor. 
 
-*PERIPHERAL* esta clase está compuesta por los 
+**PERIPHERAL** esta clase está compuesta por los 
 ![Hilos](/images/threads.png)
+
+![Classes](/images/classes.png)
+
+![Jobs](/images/jobs.png)
+
+
 
 Estás clases se paralelizan de acuerdo al siguiente diagrama. Todas las computadoras periféricas tienen dos hilos de ejecución simultáneos.
 1. El primero de verifica constantemente si es que existe un trabajo a ejecutar, revisando la variable "current_job"
@@ -132,9 +138,8 @@ if __name__ == '__main__':
     main()
 ```
 
-#### 3.4.2 Framework
 #### 3.4.3 Librerías de funciones o dependencias
-Para el uso de procesos en paralelo 
+Para la multiplicación de matrices: 
  - https://martin-thoma.com/part-iii-matrix-multiplication-on-multiple-cores-in-python-java-and-c/
 
 ### 3.5 API
