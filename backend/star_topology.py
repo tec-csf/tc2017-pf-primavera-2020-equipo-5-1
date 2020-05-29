@@ -3,7 +3,7 @@ import time
 import random 
 import threading 
 import concurrent.futures 
-import multiprocessing
+import multiprocessing as mp
 import ctypes
 
 class Peripherial:
@@ -60,6 +60,7 @@ class Peripherial:
                     print(f"COMPUTER  {self.index}  dot product 2")
                     self.current_job = 0
                 elif self.current_job == 3:
+                    global X, Y
                     X = np.random.randint(100, size=(4,4))
                     Y = np.random.randint(100, size=(4,4))
                     self.multiply(X,Y)
@@ -71,10 +72,18 @@ class Peripherial:
 
     def multiply(self, A, B):
         result = [[0 for x in range(len(A))] for y in range(len(B[0]))] 
-        for i in range(len(A)):
-            for j in range(len(B[0])):
-                for k in range(len(B)):
-                    result[i][j] += A[i][k] * B[k][j] 
+        with concurrent.futures.ThreadPoolExecutor(max_workers = len(A)) as executor:
+             for i in range(len(A)):
+                t = executor.submit(self.row_multiply, i, A, B)
+                result[i] = t.result()
+       
+
+    def row_multiply(self, row, A, B):
+        result_row = [0 for y in range(len(B[0]))] 
+        for j in range(len(B[0])):
+            for k in range(len(B)):
+                result_row[j] += A[row][k] * B[k][j]
+        return result_row
 
 
     
@@ -102,11 +111,17 @@ class Peripherial:
        
 class Central: 
     def __init__(self, num_p, alpha, delta, reboot, gamma):
+        #number of computers in star topology 
         self.num_p = num_p
+        #initialize jobs every alpha 
         self.alpha = alpha
+        #failing every gamma
         self.gamma = gamma
+        #distribute jobs every delta 
         self.delta = delta
+        #constant time of failure 
         self.reboot = reboot
+        
         self.turned_on = True
         self.failed = False
         self.counter = 0
@@ -184,10 +199,7 @@ class Central:
                 executor.submit(self.peripherial[i].turn_off)
 
 
-
-
-c = Central(4, 3, 3, 3, 50)
-c.turn_on()
-time.sleep(100)
-c.turn_off()
+p = Peripherial(1, 4, 4, 4)
+p.assign_job(3)
+p.execute_job()
 
