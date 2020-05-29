@@ -149,6 +149,11 @@ Se utilizaron dos librerías principales para el uso de paralelismo:
 - **time**: se utliza el método de sleep() para la espera de un proceso o entre fallas. 
     - _FUENTE_ :https://docs.python.org/3/library/time.html
  - **numpy**: se utiliza para generar números aleatorios con una distribución exponencial o poisson de acuerdo a los requerimientos del proyectos. 
+    - para instalar:
+   ```
+    pip install numpy 
+    # see more at https://pypi.org/project/numpy/
+    ```
     - _FUENTE_: https://docs.scipy.org/doc/numpy-1.15.0/reference/routines.random.html
 
 _FUENTE ÚTIL PARA MULTIPLICACIÓN DE MATRICES_: 
