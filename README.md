@@ -54,7 +54,7 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 
 El problema consiste en una computadora central que asigna trabajos de forma aleatoria a las computadoras perifericas siguiendo la siguiente estructura: 
 
-![Test Image 3](/images/general.png)
+![Topologia](/images/general.png)
 
 El usuario debe poder insertar las siguientes variables para correr la simulación: 
 
@@ -100,14 +100,12 @@ Existen dos clases principales las computadoras periféricas y la computadora ce
 | Peripheral                     | 
 | ------------------------------ | 
 | Peripheral(index, beta, reboot | 
-| ------------------------------ | 
 | bool failed                    |
 | bool occupied                  |
 | int index                      |
 | int beta                       |
 | int reboot                     |
 | int current_job                |
-| ------------------------------ | 
 | turn_off()                     |
 | turn_on()                      |
 | failing()                      |    
@@ -119,8 +117,8 @@ Existen dos clases principales las computadoras periféricas y la computadora ce
 | add()                          |
 | dot_product()                  | 
 | acum_sum()                     | 
-| ------------------------------ | 
 
+![Hilos](/images/threads.png)
 
 Estás clases se paralelizan de acuerdo al siguiente diagrama. Todas las computadoras periféricas tienen dos hilos de ejecución simultáneos.
 1. El primero de verifica constantemente si es que existe un trabajo a ejecutar, revisando la variable "current_job"
