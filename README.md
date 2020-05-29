@@ -64,7 +64,9 @@ El usuario debe poder insertar las siguientes variables para correr la simulaci�
 * _&gamma; --> 1/_&gamma; indica el tiempo de falla de la computadora central con distribución exponencial. 
 * _&delta; --> determina el tiempo de distriución de los trabajos 
 
-A partir de estos parámetros se inicializa la clase 
+A partir de estos parámetros se inicializa la computadora central cuyo trabajo consiste en asignar los trabajos de forma progresiva a las computadoras periféricas. Mientras estas computadoras no estén ocupadas o se encuentren en el proceso de recuperación después de una falla se ejecuta el trabajo. 
+
+Cuando la computadora principal no está activa, o se encuentra en recuperación después de una falla, esta deja de distribuir trabajos, y los forma en una cola FIFO. 
 
 ## 3. Solución
 
@@ -93,6 +95,7 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 
 ### 3.4 Backend
+
 Se dividen las clases de acuerdo al siguiente diagrama: 
 
 #### 3.4.1 Lenguaje de programación
