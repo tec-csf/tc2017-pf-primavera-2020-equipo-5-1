@@ -122,11 +122,11 @@ Mientras que las computadoras centrales cuentan con cuatro hilos en ejecución s
 
 #### TRABAJOS 
 Existen tres método diferentes a ejecutar por las computadoras periféricas, a continuación se explica un poco acerca de su implementación de forma paralela: 
-    - Multiplicación de matrices: Se divide por filas para poder ejecutarse de forma paralela, cada fila por columna ocupa un hilo. Se utiliza ThreadPoolExecutor. 
- NOTA: la matriz por default tiene una dimensión de 4x4    
-    - Suma de vectores: Cada suma de elemento a elemento es un hilo diferente en ejecución. 
- NOTA: los vectores tienen una dimensión de 10 elementos, que también puede ser editable. 
-    - Producto punto de vectores: 
+* Multiplicación de matrices: Se divide por filas para poder ejecutarse de forma paralela, cada fila por columna ocupa un hilo. Se utiliza ThreadPoolExecutor. 
+_NOTA: la matriz por default tiene una dimensión de 4x4_   
+* Suma de vectores: Cada suma de elemento a elemento es un hilo diferente en ejecución. 
+_NOTA: los vectores tienen una dimensión de 10 elementos, que también puede ser editable._
+* Producto punto de vectores: Cada multiplicación entre vectores y suma acumulada se ejecuta en un hilo diferente. 
     
 ![Jobs](/images/jobs.png)
 
