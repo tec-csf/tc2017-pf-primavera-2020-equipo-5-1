@@ -97,8 +97,38 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 ### 3.4 Backend
 
 Se dividen las clases de acuerdo al siguiente diagrama: 
+| Peripheral | 
+| ------------- | 
+| Peripheral(index, beta, reboot | 
+| bool failed                    |
+| bool occupied                  |
+| int index                      |
+| int beta                       |
+| int reboot                     |
+| int current_job                |
+| ------------- | 
 
-#### 3.4.1 Lenguaje de programación
+
+#### 3.4.1 Lenguaje de programación 
+
+Se utilizó Python 3.8.3. Se puede verificar la instalación en mac en el siguiente link: https://www.geeksforgeeks.org/download-and-install-python-3-latest-version/
+
+Aquí un ejemplo de main, se inicializa la computadora central indicando cuántas computadoras periféricas queremos incluir así como los valores indicados como parámetros los otros parámetros relevantes: el tiempo entre fallas, el tiempo para la distribución de  trabajos y el tiempo de generación de trabajos. 
+
+```python
+import star_topology
+import time
+
+def main():
+    c = star_topology.Central(3, 4, 4, 4, 100)
+    c.turn_on()
+    time.sleep(50)
+    c.turn_off()
+
+
+if __name__ == '__main__':
+    main()
+```
 
 #### 3.4.2 Framework
 #### 3.4.3 Librerías de funciones o dependencias
