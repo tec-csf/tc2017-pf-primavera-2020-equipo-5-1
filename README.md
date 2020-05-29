@@ -96,18 +96,41 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ### 3.4 Backend
 
-Se dividen las clases de acuerdo al siguiente diagrama: 
-| Peripheral | 
-| ------------- | 
+Existen dos clases principales las computadoras periféricas y la computadora central, cada una con su respectiva clase y constructor. 
+| Peripheral                     | 
+| ------------------------------ | 
 | Peripheral(index, beta, reboot | 
+| ------------------------------ | 
 | bool failed                    |
 | bool occupied                  |
 | int index                      |
 | int beta                       |
 | int reboot                     |
 | int current_job                |
-| ------------- | 
+| ------------------------------ | 
+| turn_off()                     |
+| turn_on()                      |
+| failing()                      |    
+| assign_job()                   |  
+| execute_job()                  | 
+| multiply()                     |
+| row_multiply()                 |
+| sum_vec()                      |
+| add()                          |
+| dot_product()                  | 
+| acum_sum()                     | 
+| ------------------------------ | 
 
+
+Estás clases se paralelizan de acuerdo al siguiente diagrama. Todas las computadoras periféricas tienen dos hilos de ejecución simultáneos.
+1. El primero de verifica constantemente si es que existe un trabajo a ejecutar, revisando la variable "current_job"
+2. El segundo de estos se encarga de enviar una falla en tiempos aleatorios a la computadora, y activar la bandera de failed. 
+
+Mientras que las computadoras centrales cuentan con cuatro hilos en ejecución simultáneos: 
+1. Al igual que la computadora periferico este hilo se encarga de generar una falla en un tiempo aleatorio. 
+2. Este proceso genera la cantidad de hilos o procesos correspondiente a la cantidad de computadoras que el usuario indica que a su vez ejecutan los otros dos hilos que se mencionan anteriormente
+3. Este hilo se encarga de distribuir un hilo en un tiempo aleatorio, es decir sacarlo de la cola FIFO en la que se almacenan cuando no se pueden asignar a ninguna computadora periférica
+4. Este hilo se encarga de generar un trabajo cada cierto tiempo aletorio. 
 
 #### 3.4.1 Lenguaje de programación 
 
