@@ -50,7 +50,7 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 
 ## 2. Descripción del proyecto
 
-**PROBLEMA 5: Topología Estrella **
+**PROBLEMA 5: Topología Estrella**
 
 El problema consiste en una computadora central que asigna trabajos de forma aleatoria a las computadoras perifericas siguiendo la siguiente estructura: 
 
