@@ -97,27 +97,8 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 ### 3.4 Backend
 
 Existen dos clases principales las computadoras periféricas y la computadora central, cada una con su respectiva clase y constructor. 
-| Peripheral                     | 
-| ------------------------------ | 
-| Peripheral(index, beta, reboot | 
-| bool failed                    |
-| bool occupied                  |
-| int index                      |
-| int beta                       |
-| int reboot                     |
-| int current_job                |
-| turn_off()                     |
-| turn_on()                      |
-| failing()                      |    
-| assign_job()                   |  
-| execute_job()                  | 
-| multiply()                     |
-| row_multiply()                 |
-| sum_vec()                      |
-| add()                          |
-| dot_product()                  | 
-| acum_sum()                     | 
 
+*PERIPHERAL* esta clase está compuesta por los 
 ![Hilos](/images/threads.png)
 
 Estás clases se paralelizan de acuerdo al siguiente diagrama. Todas las computadoras periféricas tienen dos hilos de ejecución simultáneos.
