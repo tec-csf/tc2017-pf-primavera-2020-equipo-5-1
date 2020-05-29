@@ -63,6 +63,7 @@ El usuario debe poder insertar las siguientes variables para correr la simulaci�
 * _&beta; --> 1/_&beta; será el tiempo promedio de falla de computadoras periféricas con distribución exponencial
 * _&gamma; --> 1/_&gamma; indica el tiempo de falla de la computadora central con distribución exponencial. 
 * _&delta; --> determina el tiempo de distriución de los trabajos 
+* reboot --> tiempo que tarda en reiniciarse una computadora
 
 A partir de estos parámetros se inicializa la computadora central cuyo trabajo consiste en asignar los trabajos de forma progresiva a las computadoras periféricas. Mientras estas computadoras no estén ocupadas o se encuentren en el proceso de recuperación después de una falla se ejecuta el trabajo. 
 
