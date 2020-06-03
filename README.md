@@ -283,4 +283,4 @@ https://flask.palletsprojects.com/en/1.1.x/installation/
 
 ## 4. Referencias
 
-*[Incluya aquí las referencias a sitios de interés, datasets y cualquier otra información que haya utilizado para realizar el proyecto y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
+* https://martin-thoma.com/part-iii-matrix-multiplication-on-multiple-cores-in-python-java-and-c/
