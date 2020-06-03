@@ -233,7 +233,7 @@ _FUENTE ÚTIL PARA MULTIPLICACIÓN DE MATRICES_:
 
 ## 4. Referencias
 
-https://p5js.org/reference/
-https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp
-https://docs.python.org/3/reference/
-https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia
+* https://p5js.org/reference/
+* https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp
+* https://docs.python.org/3/reference/
+* https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia
