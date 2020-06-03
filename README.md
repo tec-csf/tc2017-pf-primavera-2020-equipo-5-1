@@ -131,6 +131,16 @@ Para realizar una conexión entre el back-end y el front-end se utilizó Flask, 
 Lo mas importante por lo que se utilizó este framework es por su compatibilidad con Python ya que ese fue el lenguaje con el que se desarrollo nuestro back-end, aunque en algunos html's de prueba se implementaron funciones en javascript, siempre se busco una homologación en todo el proyecto.
 El Framework principal utilizado fue Bootstrap lo cual fue muy sencillo ya qu ees uno de los frameworks mas utilizados y mas sencillos para el publico.
 
+Es necesario instalar Flask para poder implementarlo en los programas, a continuación dejo los comandos y documentación pertinente:
+
+Para Python3: 
+```
+pip3 install flask 
+```
+Para Python2:
+```
+pip install flask
+```
 
 ### 3.4 Backend
 
