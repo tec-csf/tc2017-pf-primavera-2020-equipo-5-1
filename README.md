@@ -233,4 +233,7 @@ _FUENTE ÚTIL PARA MULTIPLICACIÓN DE MATRICES_:
 
 ## 4. Referencias
 
-*[Incluya aquí las referencias a sitios de interés, datasets y cualquier otra información que haya utilizado para realizar el proyecto y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
+https://p5js.org/reference/
+https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp
+https://docs.python.org/3/reference/
+https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia
