@@ -102,7 +102,7 @@ Aquí se aprecia una opción simple y clara sobre todos los componentes de nuest
 
 ### 3.2 Descripción de los componentes
 
-1. BACKEND: programado en python3, el paralelismo se incluye o importa con modulos de python así como dependencias que se mencionana a continuación. 
+*[Incluya aquí una descripción detallada de cada uno de los componentes de la arquitectura así como una justificación de la selección de cada componente]*
 
 ### 3.3 Frontend
 
@@ -243,6 +243,40 @@ _FUENTE ÚTIL PARA MULTIPLICACIÓN DE MATRICES_:
 ## 3.6 Pasos a seguir para utilizar el proyecto
 
 *[Incluya aquí una guía paso a paso para poder utilizar el proyecto, desde la clonación de este repositorio hasta el despliegue de la solución en una plataforma en la nube.]*
+
+Para probar la implementación de conexión entre back-end y front-end se diseño un archivo en python:
+
+```
+dynamic1.py
+```
+Y se diseñaron dos archivos prueba en html ubicados en la carpeta templates (es indispensable que se encuentren ahi todos los archivos html, para que flask funcione correctamente debido a su implementación de jinja2 
+```
+index.html dy1.html
+```
+Para poder correr los programas es necesario llevar algunos pasos para correr el programa y poder realizar una conexión entre el backend y la interfaz web: 
+
+1. Instalar un entorno virtual
+```
+$ pip install virtualenv
+```
+2. Crear un entorno virtual
+```
+$ py -3 -m venv venv
+```
+3. Activar un entorno virtual 
+```
+venv\Scripts\activate 
+```
+4. Para compilar el programa
+```
+set FLASK_APP=dynamic1.py
+```
+5. Correr el programa
+```
+flask run
+```
+Aun asi se anexa una guía oficial proveniente de la documentación de Flask:
+https://flask.palletsprojects.com/en/1.1.x/installation/
 
 ## 4. Referencias
 
