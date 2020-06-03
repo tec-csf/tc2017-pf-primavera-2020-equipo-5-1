@@ -228,7 +228,11 @@ _FUENTE ÚTIL PARA MULTIPLICACIÓN DE MATRICES_:
 Como lenguaje de programación utilizado para el back-end y su conexión con el front-end se utilizo **Python** en su versión 3.8.3 y posterior. Python es un lenguaje de programación creado en 1991. Este hasta la actualidad es desarrollado como un proyecto de código abierto, administrado por Python Software Foundation. Cuenta con un versiones superiores a 3.8.0 y versiones descontinuadas apenas este año 2020 como lo es el famoso Python 2.7. La extensión de los archivos creados con python es **.py.** 
 #### 3.5.2 Framework
 Tratando sobre el framework con el cual fue construido la conexión entre el back-end con el front-end, ya se puede encontrar una explicación mas detallada en la parte superior del READ ME, todo acerca de FLASK y su documentación. 
-#### 3.5.3 Librerías de funciones o dependencias
+#### 3.5.3 Librerías y módulos de funciones o dependencias
+Bootstrap: Biblioteca multiplataforma de codigo abierto para diseño de sitios y aplicaciones web. Contiene gran variedad de plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño, basado en HTML Y CSS. 
+Webrowser: Módulo que incluye funciones para poder abrir URL's en navegadores de forma interactiva, esta incluye un registro de los navegadores disponibles en casa de contar con varias opciones en el sistema.
+Flask: Framework y dependencias (explicados mas arriba)
+Concurrent.futures: Este módulo permite una interfaz de alto nivel para ejecutar callables de manera asíncrona, esta ejecución puede ser performada a base de threads (programación paralela).
 #### 3.5.4 Metodos
 Para poder extraer inputs de data dentro de nuestra interfaz web y poderlos insertar como parametros dependientes de nuestro codigo base fue necesario hacer uso de dos metodos muy populares dentro del protocolo HTTP:
 
