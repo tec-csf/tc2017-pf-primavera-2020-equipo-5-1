@@ -225,15 +225,16 @@ _FUENTE ÚTIL PARA MULTIPLICACIÓN DE MATRICES_:
 *[Incluya aquí una explicación de la solución utilizada para implementar la API del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
 
 #### 3.5.1 Lenguaje de programación
+Como lenguaje de programación utilizado para el back-end y su conexión con el front-end se utilizo **Python** en su versión 3.8.3 y posterior. Python es un lenguaje de programación creado en 1991. Este hasta la actualidad es desarrollado como un proyecto de código abierto, administrado por Python Software Foundation. Cuenta con un versiones superiores a 3.8.0 y versiones descontinuadas apenas este año 2020 como lo es el famoso Python 2.7. La extensión de los archivos creados con python es **.py.** 
 #### 3.5.2 Framework
 Tratando sobre el framework con el cual fue construido la conexión entre el back-end con el front-end, ya se puede encontrar una explicación mas detallada en la parte superior del READ ME, todo acerca de FLASK y su documentación. 
 #### 3.5.3 Librerías de funciones o dependencias
 #### 3.5.4 Metodos
 Para poder extraer inputs de data dentro de nuestra interfaz web y poderlos insertar como parametros dependientes de nuestro codigo base fue necesario hacer uso de dos metodos muy populares dentro del protocolo HTTP:
 
-GET:Se refiere a obtener información de un servidor, trae datos que se encuentran en este servidor ya sea un archivo o una base de datos al cliente. Es necesario enviar un identificador que nos permita obtener esta información de vuelta, conocido como "request". 
+**GET:** Se refiere a obtener información de un servidor, trae datos que se encuentran en este servidor ya sea un archivo o una base de datos al cliente. Es necesario enviar un identificador que nos permita obtener esta información de vuelta, conocido como "request". 
 
-POST: Este se refiere al envio de información desde el cliente para que esta pueda ser procesada y actualizada en el servidor. Cuando se envía un request de datos a traves de un formulario, son procesados y a traves de una redireccion por ejemplo "response" se devuelve una página de información, esto es el uso del metodo POST.  
+**POST:** Este se refiere al envio de información desde el cliente para que esta pueda ser procesada y actualizada en el servidor. Cuando se envía un request de datos a traves de un formulario, son procesados y a traves de una redireccion por ejemplo "response" se devuelve una página de información, esto es el uso del metodo POST.  
 
 *[Incluya aquí una explicación de cada uno de los endpoints que forman parte de la API. Cada endpoint debe estar correctamente documentado.]*
 
@@ -264,7 +265,7 @@ index.html dy1.html
 ```
 Para poder correr los programas es necesario llevar algunos pasos para correr el programa y poder realizar una conexión entre el backend y la interfaz web, unos de ellos ya configurados en la Maquina Virtual sin embargo importantes a ser mencionados). 
 
-Importación de Librerias directamente en código:
+**Importación de Librerias directamente en código:**
 ```
 from flask import Flask, jsonify, render_template, request, session, redirect, url_for
 from flask_bootstrap import Bootstrap
@@ -275,7 +276,7 @@ from flask_wtf import FlaskForm
 import threading
 import concurrent.futures
 ```
-Entorno Virtual:
+**Entorno Virtual:**
 
 1. Instalar un entorno virtual
 ```
@@ -303,3 +304,14 @@ https://flask.palletsprojects.com/en/1.1.x/installation/
 ## 4. Referencias
 
 *[Incluya aquí las referencias a sitios de interés, datasets y cualquier otra información que haya utilizado para realizar el proyecto y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
+
+Pregunta actualmente de una cuenta de integrante del equipo en StackOverflow:
+https://stackoverflow.com/questions/62110427/how-to-pass-data-variable-from-a-python-flask-code-to-another-python-code/62111328#62111328
+
+https://flask.palletsprojects.com/en/1.1.x/
+https://flask.palletsprojects.com/en/1.1.x/installation/
+https://www.ecured.cu/Python
+http://blog.micayael.com/2011/02/09/metodos-get-vs-post-del-http/
+
+
+
