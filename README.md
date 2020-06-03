@@ -262,7 +262,20 @@ Y se diseñaron dos archivos prueba en html ubicados en la carpeta templates (es
 ```
 index.html dy1.html
 ```
-Para poder correr los programas es necesario llevar algunos pasos para correr el programa y poder realizar una conexión entre el backend y la interfaz web: 
+Para poder correr los programas es necesario llevar algunos pasos para correr el programa y poder realizar una conexión entre el backend y la interfaz web, unos de ellos ya configurados en la Maquina Virtual sin embargo importantes a ser mencionados). 
+
+Importación de Librerias directamente en código:
+```
+from flask import Flask, jsonify, render_template, request, session, redirect, url_for
+from flask_bootstrap import Bootstrap
+import webbrowser
+import time
+import star_test
+from flask_wtf import FlaskForm
+import threading
+import concurrent.futures
+```
+Entorno Virtual:
 
 1. Instalar un entorno virtual
 ```
