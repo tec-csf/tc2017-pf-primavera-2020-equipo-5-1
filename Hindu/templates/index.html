@@ -1,5 +1,4 @@
 {% extends "bootstrap/base.html" %}
-{% block content %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,21 +18,24 @@
         <script src="p5.js"></script>
         <script src="addons/p5.sound.min.js"></script>
         <script src="sketch.js"></script>
-
+        {% block style %}
         <style>
         body {
           padding: 0;
           margin: 0;
         }</style>
+        {% endblock %}
+        {% block navbar %}
     </head>
-
     <body id="Main_page">
         <nav class="navbar navbar-expand-lg bg-secondary text-white text-uppercase fixed-top" id="mainTop">
             <div>
                 <h1>Topologia de estrella </h1>
             </div>
         </nav>
+        {% endblock %}
 
+        {% block content %}
         <div class="col no-gutters">
             <div class="col no-gutters">
 
@@ -107,5 +109,6 @@
             </div>
         </div>
     </body>
+    {% endblock %}
 </html>
-{% endblock %}
+

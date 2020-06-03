@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, render_template, request
 from flask_mqtt import Mqtt
+from flask_bootstrap import Bootstrap
 import time
 
 
@@ -8,6 +9,7 @@ lat = 19.22
 longi = 72.86
 
 app = Flask(__name__)
+Bootstrap(app)
 app.config['MQTT_BROKER_URL'] = 'Your server'
 app.config['MQTT_BROKER_PORT'] = Your port
 app.config['MQTT_USERNAME'] = 'Your Username'
