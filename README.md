@@ -102,7 +102,7 @@ Aquí se aprecia una opción simple y clara sobre todos los componentes de nuest
 
 ### 3.2 Descripción de los componentes
 
-*[Incluya aquí una descripción detallada de cada uno de los componentes de la arquitectura así como una justificación de la selección de cada componente]*
+1. BACKEND: programado en python3, el paralelismo se incluye o importa con modulos de python así como dependencias que se mencionana a continuación. 
 
 ### 3.3 Frontend
 
