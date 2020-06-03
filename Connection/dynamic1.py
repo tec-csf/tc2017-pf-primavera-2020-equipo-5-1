@@ -4,11 +4,13 @@ import webbrowser
 import time
 import star_test
 from flask_wtf import FlaskForm
+import threading
+import concurrent.futures
 
 app = Flask(__name__)
 app.secret_key = "super secret key"
 Bootstrap(app)
-
+global c
 
 @app.route('/', methods=['POST'])
 def my_form_post():
@@ -37,6 +39,7 @@ def my_form_post():
 
 
 
+
 @app.route('/_stuff', methods = ['GET'])
 def stuff():
     num0 = session.get('num', None)
@@ -44,10 +47,10 @@ def stuff():
     gam0 = session.get('gam', None)
     alph0 = session.get('alph', None)
     rebo0 = session.get('rebo', None)
-
-    #print(num0, delt0, gam0, alph0, rebo0)
+    global c
     c = star_test.Central(num0, delt0, gam0, alph0, rebo0)
     c.turn_on()
+    #print(num0, delt0, gam0, alph0, rebo0)
     while c.turned_on:
 
         # if c.status and c.peripherial[0].status:
@@ -58,10 +61,13 @@ def stuff():
              computers = []
              for p in range(len(c.peripherial)):
                  if c.peripherial[p].status:
-                     computers.append(c.peripherial[p].status.pop())
-                 if computers:
-                     return jsonify(result=c.status.pop(), result2=str(computers))
+                     computers.append(c.peripherial[p].status.pop()+' PERIFERICA: '+str(p))
+             if computers and c.status:
+                 return jsonify(result=c.status.pop(), result2=str(computers))
             #return jsonify(result=c.status.pop())
+    print('Termino while')
+    #return render_template('index.html')
+    return redirect(url_for('done'))
 
 @app.route('/start')
 def start():
@@ -69,10 +75,32 @@ def start():
 
 @app.route('/')
 def index():
-    session['num'] = 0
+    session['central'] = 0
     return render_template('index.html')
 
 
+@app.route('/close')
+def close():
+    return redirect(url_for('done'))
+
+
+    #s2 = star_test.Peripherial()
+
+@app.route('/_done')
+def done():
+    c.turned_on = False
+    print(c.turned_on)
+    c.p1.join()
+    c.p2.join()
+    c.p3.join()
+    c.p4.join()
+    print("Hola")
+    with concurrent.futures.ThreadPoolExecutor(max_workers = c.num_p) as executor:
+        for i in range(c.num_p):
+            executor.submit(c.peripherial[i].turn_off)
+        #s2.turn_off()
+
+    return render_template('index.html')
 if __name__ == '__main__':
 
     app.run()

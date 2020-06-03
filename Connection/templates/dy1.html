@@ -1,5 +1,7 @@
 {% extends "dy0.html" %}
 {% block body %}
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript">
 var intervalID = setInterval(update_values,1000);
 
@@ -14,6 +16,16 @@ var intervalID = setInterval(update_values,1000);
 
     };
 
+    $(function() {
+  $('a#test').bind('click', function() {
+    $.getJSON('/done',
+        function(data) {
+          window.location('index.html')
+
+    });
+    return false;
+  });
+});
 
 
     function stopTextColor() {
@@ -22,7 +34,7 @@ var intervalID = setInterval(update_values,1000);
 
 </script>
 <body onload="update_values();">
-<h1>Dynamic Update</h1>
+<h1>Computadoras Perifericas</h1>
 <p>
     <span id="result">?</span><br>
     <span id="result2">?</span>
@@ -30,7 +42,12 @@ var intervalID = setInterval(update_values,1000);
 document.getElementById("result").innerHTML;
 document.getElementById("result2").innerHTML;
 </script>
-
-	<button onclick="stopTextColor();">Stop</button>
-	</body>
+<form>
+    <a href=# id=test><button class='btn btn-default'>Test</button></a>
+</form>
+ <!-- <form method="post">
+  <input type="submit" name="salida" value="Close">
+ </form> -->
+	<!-- <button onclick="stopTextColor();">Stop</button> -->
+</body>
 {% endblock %}

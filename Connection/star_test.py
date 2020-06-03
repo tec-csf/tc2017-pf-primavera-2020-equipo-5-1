@@ -135,6 +135,8 @@ class Central:
         self.p2 = threading.Thread(target=self.intialize_job_generator)
         self.p3 = threading.Thread(target=self.distribute_job)
         self.p4 = threading.Thread(target=self.connect_peripherals)
+        self.p5 = threading.Thread(target=self.turn_off)
+
         for i in range(num_p):
             self.peripherial.append(Peripherial(i, 100, 2, 20))
 
@@ -163,7 +165,6 @@ class Central:
             self.do.append(j)
 
 
-
     def distribute_job(self):
         while(self.turned_on):
             if self.failed == False:
@@ -190,6 +191,7 @@ class Central:
         self.p2.start()
         self.p3.start()
         self.p4.start()
+
 
     def turn_off(self):
         self.turned_on = False
