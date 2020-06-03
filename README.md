@@ -122,10 +122,13 @@ P5.js es un programa de java script basado en procesing para crear visualicacion
 
 #### 3.3.1 Lenguaje de programación
 
-EL lengua de programacion utilizado principalmente para el front end fue *HTML* y *Java Script*, pero se utilizo un poco de *Python* para la relacion con el Backend
+Para el desarollo de lo que integra la back-end se utilizó solamente Python debido a su sencillez para tratar temas complejos de funciones y sobre todo una caracteristica única de este proyecto la cual es paralelismo. A consecuencia de esto la conexión entre backend y frontend fue igualmente programada con Python implementando un framework llamado Flask. 
+
+EL lenguaje de programacion utilizado principalmente para el front end fue *HTML* y *Java Script*.
 
 #### 3.3.2 Framework
-
+Para realizar una conexión entre el back-end y el front-end se utilizó Flask, el cual es un "micro" Framework para desarrollar cualquier aplicación básica de una forma ágil y rápida. Este inlcuye un servidor web de desarrollo, por lo tanto no necesita de una infraestructura con un servidor para poder estar probando el funcionamiento de las aplicaciones, inclusive asi fue como se realizó esto para el proyecto, desde el servidor web y desplegando la interfaz web directamente en sevidor local "localhost" para realizar pruebas. 
+Lo mas importante por lo que se utilizó este framework es por su compatibilidad con Python ya que ese fue el lenguaje con el que se desarrollo nuestro back-end, aunque en algunos html's de prueba se implementaron funciones en javascript, siempre se busco una homologación en todo el proyecto.
 El Framework principal utilizado fue Bootstrap lo cual fue muy sencillo ya qu ees uno de los frameworks mas utilizados y mas sencillos para el publico.
 
 
@@ -233,7 +236,4 @@ _FUENTE ÚTIL PARA MULTIPLICACIÓN DE MATRICES_:
 
 ## 4. Referencias
 
-* https://p5js.org/reference/
-* https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp
-* https://docs.python.org/3/reference/
-* https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia
+*[Incluya aquí las referencias a sitios de interés, datasets y cualquier otra información que haya utilizado para realizar el proyecto y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
