@@ -92,6 +92,8 @@ Para crear el Frontend utilizamos el lenguaje HTML y ademas utilizamos 2 libreri
 
 Bootsrap es una libreria externa la cual nos da mayor libertad de expresarnos de forma mas creativa por nuestro frontend, debido a que cuenta con un archivo de estilos y funciones ya creada, listas para ser utilizadas en el framework, de esta forma logramos crear una pagina muy bien hecha donde el usuario puede ver claramente como se utiliza
 
+![Topologia](/images/frontend1.png)
+
 ## P5.js
 
 #### 3.3.1 Lenguaje de programación
