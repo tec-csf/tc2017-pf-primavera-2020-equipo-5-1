@@ -71,7 +71,19 @@ Cuando la computadora principal no está activa, o se encuentra en recuperación
 
 ## 3. Solución
 
-A continuación aparecen descritos los diferentes elementos que forman parte de la solución del proyecto.
+Se genera un python con un backend que forma a través de librerías que permiten el paralelismo como lo son threading y ThreadPoolExecutor, lo cual se explica con mayor detenimiento en la parte de *Backend*. Se utiliza flask para poder pasar los valores de input del usuario para poder a través del constructor, generar la computadora Central. Esta computadora Central estará agregando a una cola constantemente, a través de flask se vacía esta cola creando updates cada 1000 milisegundos. 
+
+En el python llamado star_test.py se brinda otro backend que regresa en vez de strings ints con el fin de facilitar las animaciones en el html junto con javascript:
+
+Central | explanation | 
+--- | --- | 
+0 | starting failing | 
+1 | rebooted after fail  | 
+2 | job assignment on computer | 
+3 | executing vector sum | 
+4 | executing dot product | 
+5 | executing multiply matrix | 
+6 | job not found | 
 
 ### 3.1 Arquitectura de la solución
 
