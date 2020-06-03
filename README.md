@@ -75,7 +75,7 @@ Se genera un python con un backend que forma a través de librerías que permite
 
 En el python llamado star_test.py se brinda otro backend que regresa en vez de strings ints con el fin de facilitar las animaciones en el html junto con javascript:
 
-Central | explanation | 
+Peripheral | explanation | 
 --- | --- | 
 0 | starting failing | 
 1 | rebooted after fail  | 
@@ -84,6 +84,14 @@ Central | explanation |
 4 | executing dot product | 
 5 | executing multiply matrix | 
 6 | job not found | 
+
+Central | explanation | 
+--- | --- | 
+0 | starts failing  | 
+1 | failing ends  | 
+2 | generate job | 
+3 | distribute job | 
+4 | job not identified | 
 
 ### 3.1 Arquitectura de la solución
 
