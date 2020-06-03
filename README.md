@@ -88,13 +88,13 @@ Aquí se aprecia una opción simple y clara sobre todos los componentes de nuest
 
 Para crear el Frontend utilizamos el lenguaje HTML y ademas utilizamos 2 librerias externas para expresar de mejor manera nuestro algoritmos 
 
-#### Bootstrap
+#### BOOTSRAP
 
-Bootsrap es una libreria externa la cual nos da mayor libertad de expresarnos de forma mas creativa por nuestro frontend, debido a que cuenta con un archivo de estilos y funciones ya creada, listas para ser utilizadas en el framework, de esta forma logramos crear una pagina muy bien hecha donde el usuario puede ver claramente como se utiliza
+Bootsrap la utilizamos como nuestro framework principal, es una libreria externa la cual nos da mayor libertad de expresarnos de forma mas creativa por nuestro frontend, debido a que cuenta con un archivo de estilos y funciones ya creada, listas para ser utilizadas en el framework, de esta forma logramos crear una pagina muy bien hecha donde el usuario puede ver claramente como se utiliza
 
 ![front](/images/frontend1.png)
 
-#### P5.js
+#### P5.JS
 
 P5.js es un programa de java script basado en procesing para crear visualicaciones en HTML, es un programa muy sencillo de usar donde tenemos nuestro sketch.js y lo llamamos dentro de nuestro HTML con las especificaicones que querramos. es un programa muy sencillo con funciones bien documentadas y que recomiendo mucho
 
@@ -102,10 +102,11 @@ P5.js es un programa de java script basado en procesing para crear visualicacion
 
 #### 3.3.1 Lenguaje de programación
 
+EL lengua de programacion utilizado principalmente para el front end fue *HTML* y *Java Script*, pero se utilizo un poco de *Python* para la relacion con el Backend
+
 #### 3.3.2 Framework
-#### 3.3.3 Librerías de funciones o dependencias
 
-
+El Framework principal utilizado fue Bootstrap lo cual fue muy sencillo ya qu ees uno de los frameworks mas utilizados y mas sencillos para el publico.
 
 
 ### 3.4 Backend
