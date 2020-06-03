@@ -226,7 +226,14 @@ _FUENTE ÚTIL PARA MULTIPLICACIÓN DE MATRICES_:
 
 #### 3.5.1 Lenguaje de programación
 #### 3.5.2 Framework
+Tratando sobre el framework con el cual fue construido la conexión entre el back-end con el front-end, ya se puede encontrar una explicación mas detallada en la parte superior del READ ME, todo acerca de FLASK y su documentación. 
 #### 3.5.3 Librerías de funciones o dependencias
+#### 3.5.4 Metodos
+Para poder extraer inputs de data dentro de nuestra interfaz web y poderlos insertar como parametros dependientes de nuestro codigo base fue necesario hacer uso de dos metodos muy populares dentro del protocolo HTTP:
+
+GET:Se refiere a obtener información de un servidor, trae datos que se encuentran en este servidor ya sea un archivo o una base de datos al cliente. Es necesario enviar un identificador que nos permita obtener esta información de vuelta, conocido como "request". 
+
+POST: Este se refiere al envio de información desde el cliente para que esta pueda ser procesada y actualizada en el servidor. Cuando se envía un request de datos a traves de un formulario, son procesados y a traves de una redireccion por ejemplo "response" se devuelve una página de información, esto es el uso del metodo POST.  
 
 *[Incluya aquí una explicación de cada uno de los endpoints que forman parte de la API. Cada endpoint debe estar correctamente documentado.]*
 
@@ -236,8 +243,7 @@ _FUENTE ÚTIL PARA MULTIPLICACIÓN DE MATRICES_:
 * **URL**:
 * **Verbos HTTP**:
 * **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+
 
 
 ## 3.6 Pasos a seguir para utilizar el proyecto
@@ -283,4 +289,4 @@ https://flask.palletsprojects.com/en/1.1.x/installation/
 
 ## 4. Referencias
 
-* https://martin-thoma.com/part-iii-matrix-multiplication-on-multiple-cores-in-python-java-and-c/
+*[Incluya aquí las referencias a sitios de interés, datasets y cualquier otra información que haya utilizado para realizar el proyecto y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
