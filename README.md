@@ -102,7 +102,7 @@ Aquí se aprecia una opción simple y clara sobre todos los componentes de nuest
 
 ### 3.2 Descripción de los componentes
 
-*[Incluya aquí una descripción detallada de cada uno de los componentes de la arquitectura así como una justificación de la selección de cada componente]*
+*BACKEND*: se encarga a través de un código en python de ejecutar las funciones en las computadoras periféricas que están recibiendo trabajos por parte de la computadora central. El código hace uso de paralelismo, y está implementado con los modulos de python establecidos en la sección de "dependencias" del "backend". 
 
 ### 3.3 Frontend
 
@@ -242,7 +242,10 @@ _FUENTE ÚTIL PARA MULTIPLICACIÓN DE MATRICES_:
 
 ## 3.6 Pasos a seguir para utilizar el proyecto
 
-*[Incluya aquí una guía paso a paso para poder utilizar el proyecto, desde la clonación de este repositorio hasta el despliegue de la solución en una plataforma en la nube.]*
+En caso de que quisiera correr el backend por separado: 
+1. Descargar las dependencias: python, numpy 
+2. Correr el código con python3
+3. Recuerda tener el main como se muestra en la sección de "backend"
 
 Para probar la implementación de conexión entre back-end y front-end se diseño un archivo en python:
 
