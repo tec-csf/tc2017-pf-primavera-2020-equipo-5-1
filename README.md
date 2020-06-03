@@ -86,7 +86,11 @@ Aquí se aprecia una opción simple y clara sobre todos los componentes de nuest
 
 ### 3.3 Frontend
 
-*[Incluya aquí una explicación de la solución utilizada para el frontend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
+Para crear el Frontend utilizamos el lenguaje HTML y ademas utilizamos 2 librerias externas para expresar de mejor manera nuestro algoritmos 
+
+## Bootstrap
+
+## P5.js
 
 #### 3.3.1 Lenguaje de programación
 
